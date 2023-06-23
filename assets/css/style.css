@@ -1,0 +1,434 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+/*COMPONENTS*/
+/*Rating*/
+.rating {
+    position: relative;
+    font-size: 32px;
+    display: inline-block;
+}
+
+.rating::before {
+    content: "★★★★★";
+    display: block;
+}
+
+.rating__items {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    overflow: hidden;
+}
+
+.rating__item {
+    position: absolute;
+    width: 0%;
+    height: 0%;
+    opacity: 0;
+    visibility: hidden;
+    top: 0;
+    left: 0;
+}
+
+.rating__label {
+    flex: 0 0 20%;
+    height: 100%;
+    cursor: pointer;
+    color: #000;
+}
+
+.rating__label::before {
+    content: "★";
+    display: block;
+    transition: color 0.3s ease 0s;
+}
+
+.rating__label:hover,
+.rating__label:hover~.rating__label,
+.rating__label:checked~.rating__label:hover {
+    color: #dfcc6d;
+}
+
+.rating__item:checked,
+.rating__item:checked~.rating__label,
+.checked~.rating__label {
+    color: #ffd300;
+}
+/*Progressbar*/
+.progressbar {
+    height: 20px;
+    width: 80%;
+    margin: 15px auto;
+    position: relative;
+    background: #fff;
+    box-shadow: inset 4px 2px 8px rgba(127, 127, 127, 0.3);
+    border-radius: 30px;
+}
+
+.progressbar>span {
+    display: block;
+    height: 100%;
+    width: 30%;
+    background-color: rgb(43, 194, 83);
+    background-image: linear-gradient(to bottom,
+            rgb(43, 194, 83) 37%,
+            rgb(84, 240, 84) 69%);
+    box-shadow:
+        inset 0 2px 9px rgba(255, 255, 255, 0.3),
+        inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    color: #fff;
+    border-radius: 30px;
+}
+
+.blue>span {
+    background-color: #a3a5f0;
+    background-image: linear-gradient(to bottom, #a3a5f0, #3b23f4);
+}
+/*Buttons*/
+.btn {
+    border-radius: 10%;
+    color: #fff;
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.btn:hover {
+    text-decoration: none;
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+.small {
+    width: 100px;
+    height: 50px;
+    padding: 13px 15px;
+    font-size: 14px;
+}
+
+.medium {
+    width: 150px;
+    height: 100px;
+    padding: 35px 15px;
+    font-size: 18px;
+}
+
+.large {
+    width: 200px;
+    height: 150px;
+    font-size: 20px;
+}
+
+.attention {
+    background-color: orange;
+}
+
+.attention:hover {
+    border: 1px solid orange;
+    color: orange;
+}
+
+.warning {
+    background-color: red;
+}
+
+.warning:hover {
+    border: 1px solid red;
+    color: red;
+}
+
+.success {
+    background-color: green;
+}
+
+.success:hover {
+    border: 1px solid green;
+    color: green;
+}
+
+.center {
+    margin: 0 auto 30px;
+}
+
+.right {
+    float: right;
+}
+/*PAGE*/
+.container{
+    max-width: 1024px;
+    margin: 50px auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav{
+    display: flex;
+    justify-content: end;
+}
+.navbar {
+    max-width: 784px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 3px grey;
+    padding: 30px 25px;
+}
+.navbar__items {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar__item {
+    margin: 0 15px;
+}
+.navbar__item__link {
+    font-weight: 300;
+    text-decoration: none;
+    padding-bottom: 1px;
+}
+.navbar__item__link:hover{
+    text-decoration: none;
+}
+.cabinet {
+    color: #671ec3;
+    border-bottom: 1px solid #671ec3;
+}
+.first {
+    color: #418869;
+    border-bottom: 1px solid #418869;
+}
+.second {
+    color: #4180e3;
+    border-bottom: 1px solid #4180e3;
+}
+.third {
+    color: #e48062;
+    border-bottom: 1px solid #e48062;
+}
+.fourth {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+.fifth {
+    color: #c53a35;
+    border-bottom: 1px solid #c53a35;
+}
+.main{
+    margin-top: 60px;
+}
+.main__container {
+    display: flex;
+}
+.main__container__text {
+    max-width: 200px;
+    margin-right: 40px;
+    font-size: 12px;
+}
+.main__container__title {
+    margin-bottom: 50px;
+}
+.main__container__form__title {
+    display: flex;
+}
+.form__indicator {
+    margin-left:40px;
+    display: flex;
+    border-radius: 5px;
+    height: 15px;
+    margin-top:10px;
+}
+.form__indicator__item {
+    text-align: center;
+    margin-right: 1px;
+    font-style: italic;
+    color:#6c6c6c;
+    background-color: #e0e0e0;
+    box-shadow: inset 0px 1px 3px grey;
+    width: 105px;
+    font-size: 14px;
+}
+.visited {
+    background-color: #6cc26a;
+    background-image: linear-gradient(to bottom, #6cc26a, #70fa6e);
+    color: #fff;
+}
+.active {
+    background-color: rgb(43, 194, 83);
+    background-image: linear-gradient(to bottom,
+            rgb(43, 194, 83) 37%,
+            rgb(84, 240, 84) 69%);
+    color: #fff;
+}
+.form__delimiter {
+    margin:30px 0;
+    display: flex;
+}
+.form__delimiter__text {
+    font-style: italic;
+    font-size: 12px;
+    margin-right:10px;
+    color: #6c6c6c;
+}
+.form__delimiter__hr {
+    margin: 7px 0;
+    padding: 0;
+    height: 0px;
+    border: none;
+    border-top: 0.5px solid #e0e0e0;
+    width: 659px;
+}
+.main__container__form__form {
+    display: flex;
+    flex-wrap: wrap;
+}
+.form__input__item {
+    width: 29%;
+    margin: 0 30px 30px 0;
+}
+.form__input__item__title {
+    font-weight: bold;
+}
+.form__input__item__text {
+    padding: 5px 10px;
+    border:1px solid #6c6c6c;
+    margin-top:5px;
+}
+.form__input__item__radio {
+	display: none;
+}
+.form__input__item__label {
+    display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border-radius: 6px;
+	user-select: none;
+    font-size: 14px;
+    margin-top: 10px;
+}
+.form__input__item__radio:checked + .form__input__item__label {
+	background-color: #6cc26a;
+    color: #fff;
+}
+.form__input__item select{
+    border-width: 1px;
+    border-style: solid;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-image: initial;
+    border-radius: 0px;
+    margin-top: 15px;
+}
+.form__input__item__place{
+    width: 100%;
+}
+.form__input__item__text__place {
+    width: 100%;
+}
+.form__input__item__desc {
+    font-size: 12px;
+    color: #6c6c6c;
+padding-top: 10px;
+}
+.form__buttons {
+    background-color: #e0e0e0;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.form__button {
+    width:100px;
+    padding: 10px 15px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.form__button__return {
+    background-color: #6c6c6c;
+    color: #fff;
+}
+.form__button__next {
+    background-color: #6cc26a;
+    color: #fff;
+}
+@media screen and (max-width:480px){
+    .container{
+        width:90%;
+    }
+    .nav{
+        display: block;
+    }
+    .navbar{
+        padding: 10px 15px;
+        font-size: 12px;
+    }
+    .navbar__items{
+        flex-wrap: wrap;
+    }
+    .navbar__item {
+        margin: 0 5px 5px 5px;
+        width: 30%;
+        text-align: center;
+    }
+    .main__container{
+        flex-wrap: wrap;
+    }
+    .main__container__text{
+        max-width: 100%;
+        margin-right: 0;
+    }
+    .main__container__title {
+        margin-bottom: 10px;
+    }
+    .main__container__form{
+        margin-top: 20px;
+    }
+    .main__container__form__title{
+        flex-direction: column;
+    }
+    .form__indicator{
+        margin:0;
+    }
+    .form__indicator__item{
+        width: 75px;
+    }
+    .form__delimiter__hr {
+        width: 255px;
+    }
+    .main__container__form__form{
+        justify-content: space-between;
+    }
+    .form__input__item__text{
+        width: 140px;
+    }
+    .form__input__item__title{
+        font-size: 12px;
+    }
+    .form__input__item{
+        width: 33%;
+    }
+    .form__input__item__place{
+        width: 100%;
+    }
+    .form__input__item__text__place{
+        width: 100%;
+    }
+}
+

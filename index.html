@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav">
+        <nav class="navbar">
+            <ul class="navbar__items">
+                <li class="navbar__item"><a href="#" class="navbar__item__link cabinet">Личный кабинет</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__item__link first">Раздел 1</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__item__link second">Раздел 2</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__item__link third">Раздел 3</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__item__link fourth">Раздел 4</a></li>
+                <li class="navbar__item"><a href="#" class="navbar__item__link fifth">Раздел 5</a></li>
+            </ul>
+        </nav>
+    </div>
+        <section class="main">
+            <div class="main__container">
+                <div class="main__container__text">
+                    <p class="main__container__title"><img src="/assets/img/sun.png">TuTuRu - крупнейший сервис поиска, бронирования и покупки авиабилетов и ж/д билетов.</p>
+                    <p class="main__container__description">Наша цель проста - делать наших клиентов счастливыми, а их путешествия незабываемыми. Любое путешествие начинается с поиска подходящих билетов и бронирования гостиниц. А мы делаем это качественно, обеспечивая самую лучшую поддержку благодаря собственному контакт-центру.</p>
+                </div>
+                <div class="main__container__form">
+                    <div class="main__container__form__title">
+                        <h2>Заполните форму</h2>
+                        <div class="form__indicator">
+                            <div class="form__indicator__item visited">1</div>
+                            <div class="form__indicator__item visited">2</div>
+                            <div class="form__indicator__item active">3</div>
+                            <div class="form__indicator__item">4</div>
+                            <div class="form__indicator__item">5</div>
+                        </div>
+                    </div>
+                    <div class="form__delimiter">
+                        <p class="form__delimiter__text">Общая информация</p>
+                        <hr class="form__delimiter__hr">
+                    </div>
+                    <form action="" class="main__container__form__form">
+                        <div class="form__input__item">
+                            <p class="form__input__item__title">Фамилия</p>
+                            <input type="text" class="form__input__item__text">
+                        </div>
+                        <div class="form__input__item">
+                            <p class="form__input__item__title">Имя</p>
+                            <input type="text" class="form__input__item__text" id="imya">
+                        </div>
+                        <div class="form__input__item">
+                            <p class="form__input__item__title">Отчество</p>
+                            <input type="text" class="form__input__item__text" id="otchestvo">
+                        </div>
+                        <div class="form__input__item">
+                            <p class="form__input__item__title">Меняли фамилию?</p>
+                            <input type="radio" class="form__input__item__radio" id="yesfamilia" name="questFamilia">
+                            <label for="yesfamilia" class="form__input__item__label">Да</label>
+                            <input type="radio" class="form__input__item__radio" id="nofamilia" name="questFamilia" checked>
+                            <label for="nofamilia" class="form__input__item__label">Нет</label>
+                        </div>
+                        <div class="form__input__item">
+                            <p class="form__input__item__title">Пол</p>
+                            <input type="radio" class="form__input__item__radio" id="men" name="gender" checked>
+                            <label for="men" class="form__input__item__label">Муж</label>
+                            <input type="radio" class="form__input__item__radio" id="women" name="gender">
+                            <label for="women" class="form__input__item__label">Жен</label>
+                        </div>
+                        <div class="form__input__item">
+                            <p class="form__input__item__title">Семейное положение</p>
+                            <select name="family-status" id="familyStatus">
+                                <option value="">Женат/ Замужем</option>
+                                <option value="">Холост</option>
+                            </select>
+                        </div>
+                        <div class="form__input__item">
+                            <p class="form__input__item__title">Гражданство</p>
+                            <select name="citizenship" id="citizenship">
+                                <option value="">Российская Федерация</option>
+                                <option value="">Другое</option>
+                            </select>
+                        </div>
+                        <div class="form__input__item">
+                            <p class="form__input__item__title">Дата рождения</p>
+                            <div class="form__input__item__date">
+                            <select name="day" id="day">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11" selected>11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                            </select>
+                            <select name="mounth" id="mounth">
+                                <option value="01">Январь</option>
+                                <option value="02">Февраль</option>
+                                <option value="03">Март</option>
+                                <option value="04">Апрель</option>
+                                <option value="05">Май</option>
+                                <option value="06" selected>Июнь</option>
+                                <option value="07">Июль</option>
+                                <option value="08">Август</option>
+                                <option value="09">Сентябрь</option>
+                                <option value="10">Октябрь</option>
+                                <option value="11">Ноябрь</option>
+                                <option value="12">Декабрь</option>
+                            </select>
+                            <select name="year" id="year">
+                                <option value="">1970</option>
+                                <option value="">1971</option>
+                                <option value="">1972</option>
+                                <option value="">1973</option>
+                                <option value="">1974</option>
+                                <option value="">1975</option>
+                                <option value="">1976</option>
+                                <option value="">1977</option>
+                                <option value="">1978</option>
+                                <option value="">1979</option>
+                                <option value="">1980</option>
+                                <option value="">1981</option>
+                                <option value="">1982</option>
+                                <option value="">1983</option>
+                                <option value="">1984</option>
+                                <option value="">1985</option>
+                                <option value="">1986</option>
+                                <option value="">1987</option>
+                                <option value="">1988</option>
+                                <option value="">1989</option>
+                                <option value="">1990</option>
+                                <option value="">1991</option>
+                                <option value="">1992</option>
+                                <option value="">1993</option>
+                                <option value="">1994</option>
+                                <option value="">1995</option>
+                                <option value="">1996</option>
+                                <option value="">1997</option>
+                                <option value="">1998</option>
+                                <option value="">1999</option>
+                                <option value="">2000</option>
+                                <option value="">2001</option>
+                            </select>
+                        </div>
+                        </div>
+                        <div class="form__input__item form__input__item__place">
+                            <p class="form__input__item__title">Место рождения</p>
+                            <input type="text" class="form__input__item__text form__input__item__text__place " id="place">
+                            <p class="form__input__item__desc">Например, Россия, Комсомольск-на-Амуре</p>
+                        </div>
+                        <div class="form__buttons">
+                            <input type="submit" class="form__button form__button__return" value="Назад">
+                            <input type="submit" class="form__button form__button__next" formaction="/success.html" formmethod="post" value="Далее">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
